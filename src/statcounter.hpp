@@ -4,7 +4,7 @@
 #include <cassert>
 
 /*
- * Stores stats without keep track of the actual numbers.
+ * Stores summary stats without keeping track of the actual seen numbers.
  *
  * Implements Knuth's online algorithm for variance, first one
  * found under "Online Algorithm" of
