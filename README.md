@@ -19,10 +19,12 @@ For Linux,
  2. Install Boost 1.54 or higher
  3. From the top-level directory, run:
  
- `mkdir build`
-` cd build`
-`cmake ../src`
-`make`
+``` 
+mkdir build
+cd build
+cmake ../src
+make
+```
 
 The code has been tested on Ubuntu/Gcc and Windows 7/MSVC. 
 
@@ -36,9 +38,9 @@ Different experimental runs can be invoked by:
 `fmn --help` will display the program usage.
 `fmn` will run with default settings.
 
-For example, the following command regenerates the experimental results reported in the publication:
+For example, the following command regenerates the experimental results reported in the publication (albeit with less statistical signifcance, change the last parameter to 10000 to match the reported experiments):
 
-`./fmn 666 7 0.005 5000 10000`
+`./fmn 666 7 0.005 5000 200`
 
 and will return something like:
 
